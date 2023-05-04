@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: { min: "300px", max: "767px" },
+            md: { min: "768px", max: "1023px" },
+            lg: { min: "1024px" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="w-full m-[0] p-[0] box-border">
+    <header class="w-full lg:h-28 md:h-28 sm:p-5 bg-[#F7F7F7]">
+      <nav
+        id="header_nav"
+        class="flex items-center lg:h-28 md:h-28 sm:justify-between ml-[5vw] lg:flex md:block"
+      >
+        <div class="flex justify-between sm:w-full">
+          <li class="text-xl list-none">Stadiums App</li>
+          <img
+            id="menu"
+            class="w-9 h-7 lg:hidden md:hidden"
+            src="./icons/Menu.svg"
+            alt=""
+          />
+        </div>
+        <ul
+      
+          class="md:ml-[137px] md:flex lg:ml-[137px] lg:flex sm:hidden sm:w-full navigation"
+        >
+          <li class="md:text-xl lg:text-xl"><a href="index.html">Home</a></li>
+          <li class="text-xl text-gray-500 md:ml-[112px] lg:ml-[112px]">
+            <a href="ourApp.html">Download</a>
+          </li>
+          <li class="text-xl text-gray-500 md:ml-[112px] lg:ml-[112px]">
+            <a href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="w-full lg:h-[605px] bg-[url('./img/section_img.png')] bg-cover bg-center md:h-[400px] sm:h-[450px]"
+    >
+      <div class="w-full h-full bg-black/[.70]">
+        <div class="lg:ml-60 lg:pt-[90px] md:ml-[0px] md:text-center">
+          <h1
+            class="lg:text-[52px] md:text-[32px] font-black text-white md:pt-4 lg:pb-12 md:pb-7 sm:text-[36px] sm:text-center sm:pt-[47px]"
+          >
+            THE STADIUMS APP
+          </h1>
+          <div class="pb-[22.5px] lg:w-[444px] flex justify-center md:w-full">
+            <div class="w-24 border-b-2 border-green-600"></div>
+          </div>
+          <div class="md:flex md:justify-center">
+            <p
+              class="lg:w-[80%] text-white lg:text-[36px] md:text-[20px] md:w-[58%] mb-24 sm:text-center sm:text-[21px] sm:mb-[60px] sm:px-[10px]"
+            >
+              Keep track of stadiums that you have visited. Find out how many
+              stadiums you've been to across the leagues.
+            </p>
+          </div>
+          <div class="w-full lg:flex flex md:justify-center sm:justify-center">
+            <button
+              class="lg:w-[246px] lg:h-[66px] bg-[#178A1F] text-white md:w-[195px] md:h-[50px] sm:w-[271px] sm:h-[43px]"
+            >
+              Download The App
+            </button>
+            <button
+              class="lg:w-[246px] h-[66px] bg-none text-white border-2 border-[#178A1F] ml-8 md:hidden sm:hidden"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="w-2/3 md:w-full m-auto pt-[65px] pb-[35px]">
+      <h2 class="text-center text-[42px] mb-[30px]">About the App</h2>
+      <div class="pb-[22.5px] lg:w-full flex justify-center md:w-full">
+        <div class="w-24 border-b-2 border-green-600"></div>
+      </div>
+      <div class="w-full sm:m-auto">
+        <div class="w-full lg:flex md:flex justify-between">
+          <div class="w-full m-auto">
+            <img class="w-11 h-9 m-auto" src="./icons/icon1.svg" alt="" />
+            <p
+              class="text-[16px] md:w-[80%] md:m-auto md:text-center text-center lg:w-[300px] lg:m-auto"
+            >
+              Keep track of stadiums that you have visited. Find out how many
+              stadiums you've been to across the leagues.
+            </p>
+          </div>
+          <div class="w-full m-auto">
+            <img class="w-11 h-9 m-auto" src="./icons/icon4.svg" alt="" />
+
+            <p
+              class="text-[16px] md:w-[80%] md:m-auto md:text-center text-center lg:w-[300px] lg:m-auto"
+            >
+              Earn Badges and rewards for each group of stadiums you visit.
+              Compare your numbers on our leaderboard!
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full lg:flex md:flex justify-between lg:pt-24">
+          <div class="w-full pt-[25px] m-auto">
+            <img class="w-11 h-9 m-auto" src="./icons/icon3.svg" alt="" />
+            <p
+              class="text-[16px] md:w-[80%] md:m-auto md:text-center text-center lg:w-[300px] lg:m-auto"
+            >
+              Leave reviews and hints and tips for fellow users! Read our own
+              guides to make the best of your trip.
+            </p>
+          </div>
+          <div class="w-full pt-[25px] m-auto">
+            <img class="w-11 h-9 m-auto" src="./icons/icon2.svg" alt="" />
+            <p
+              class="text-[16px] md:w-[80%] md:m-auto md:text-center text-center lg:w-[300px] lg:m-auto"
+            >
+              Discover new stadiums across multiple leagues and sports. Find out
+              the latest news on new developments for your clubs!
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="w-full bg-[#262626] py-[20px]">
+      <h3 class="text-white text-[17px] text-center mb-[15px]">
+        Start Tracking and Sharing Now
+      </h3>
+      <div class="flex justify-center">
+        <button class="bg-[#178A1F] text-white w-[271px] h-[48px]">
+          Get Started
+        </button>
+      </div>
+    </article>
+    <footer class="w-full bg-[#F7F7F7]">
+      <div class="w-[80%] m-auto lg:flex md:flex sm:block pt-14">
+        <div class="w-full">
+          <ul>
+            <li class="mb-[45px]"><a href="index.html">Home</a></li>
+            <li class="mb-[45px]"><a href="contactUs.html">Contact Us</a></li>
+            <li class="mb-[45px]"><a href="ourApp.html">Download</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center pb-[20px]">
+          <a href="https://www.facebook.com"
+            ><img
+              class="w-[40px] h-[40px] pointer mr-[43px]"
+              src="./icons/facebook.svg"
+              alt=""
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img
+              class="w-[40px] h-[40px] pointer mr-[43px]"
+              src="./icons/instagram.svg"
+              alt=""
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img
+              class="w-[40px] h-[40px] pointer mr-[43px]"
+              src="./icons/twitter.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="text-center mb-[10px]">
+        <p>RJM Digital Platforms. 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

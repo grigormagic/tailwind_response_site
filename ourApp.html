@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: { min: "300px", max: "767px" },
+            md: { min: "768px", max: "1023px" },
+            lg: { min: "1024px" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="w-full m-0 p-0 box-border">
+    <header class="w-full lg:h-28 md:h-28 sm:p-5 bg-[#F7F7F7]">
+      <nav
+        id="header_nav"
+        class="flex items-center lg:h-28 md:h-28 sm:justify-between ml-[5vw]"
+      >
+        <div class="flex justify-between sm:w-full">
+          <li class="text-xl list-none">Stadiums App</li>
+          <img
+            id="menu"
+            class="w-9 h-7 lg:hidden md:hidden"
+            src="./icons/Menu.svg"
+            alt=""
+          />
+        </div>
+        <ul
+          class="md:ml-[137px] md:flex lg:ml-[137px] lg:flex sm:hidden sm:w-full navigation"
+        >
+          <li class="md:text-xl text-gray-500 lg:text-xl">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="text-xl md:ml-[112px] lg:ml-[112px]">
+            <a href="ourApp.html">Download</a>
+          </li>
+          <li class="text-xl text-gray-500 md:ml-[112px] lg:ml-[112px]">
+            <a href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="w-full">
+      <h1 class="text-[52px] text-center">Our App</h1>
+      <div class="pb-[22.5px] lg:mt-4 lg:w-full flex justify-center md:w-full">
+        <div class="w-24 border-b-2 border-green-600"></div>
+      </div>
+
+      <div class="w-[80%] m-auto">
+        <p
+          class="text-center lg:text-[35px] md:text-[18px] w-full m-auto text-center"
+        >
+          Our App will coming out shortly. Sign up to our mailing list below and
+          be notified as soon as it is released!
+        </p>
+      </div>
+      <div class="w-[80%] m-auto">
+        <input
+          class="w-full mt-4 border-gray-500 border-[1px] outline-none opacity-40"
+          type="text"
+          placeholder="First Name"
+        />
+        <input
+          class="w-full mt-4 border-gray-500 border-[1px] outline-none opacity-40"
+          type="text"
+          placeholder="Last Name"
+        />
+        <input
+          class="w-full mt-4 border-gray-500 border-[1px] outline-none opacity-40"
+          type="email"
+          placeholder="Email"
+        />
+
+        <button class="bg-[#178A1F] text-white w-[271px] h-[50px] mt-4">
+          Get Started
+        </button>
+      </div>
+    </section>
+    <footer class="w-full bg-[#F7F7F7]">
+      <div class="w-[80%] m-auto lg:flex md:flex sm:block pt-14">
+        <div class="w-full">
+          <ul>
+            <li class="mb-[45px]"><a href="index.html">Home</a></li>
+            <li class="mb-[45px]"><a href="contactUs.html">Contact Us</a></li>
+            <li class="mb-[45px]"><a href="ourApp.html">Download</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center pb-[20px]">
+          <a href="https://www.facebook.com"
+            ><img
+              class="w-[40px] h-[40px] pointer mr-[43px]"
+              src="./icons/facebook.svg"
+              alt=""
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img
+              class="w-[40px] h-[40px] pointer mr-[43px]"
+              src="./icons/instagram.svg"
+              alt=""
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img
+              class="w-[40px] h-[40px] pointer mr-[43px]"
+              src="./icons/twitter.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="text-center mb-[10px]">
+        <p>RJM Digital Platforms. 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>
